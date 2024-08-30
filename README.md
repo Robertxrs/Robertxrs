@@ -20,7 +20,7 @@
 
 <h2 align="center">⚡ Stats ⚡</h2>
 <br>
-<div align="right">
+<div align="center">
   <img width=340 src="https://github-readme-stats.vercel.app/api/top-langs/?username=Robertxrs&theme=tokyonight&show_icons=true&hide_border=true&layout=compact" alt="Robertxrs's Top Languages" />
   <img width=400 src="https://github-readme-stats.vercel.app/api?username=Robertxrs&theme=tokyonight&show_icons=true&hide_border=true&count_private=true" alt="Robertxrs's Stats" />
 </div>
