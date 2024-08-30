@@ -1,0 +1,29 @@
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Generate Snake
+        uses: Platane/snk@master
+        with:
+          github_user_name: Robertxrs
+          outputs: dist/github-contribution-grid-snake.svg
+
+      - name: Push the changes
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: "Robertxrs"
+          author_email: "robertrdossantos@gmail.com"
+          message: "Generated snake.svg"
+          add: "dist/github-contribution-grid-snake.svg"
+          branch: output
